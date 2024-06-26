@@ -2,10 +2,6 @@
 
 This repository provides a guide for setting up Grafana, Loki, Promtail, Prometheus, and cAdvisor for monitoring and visualization purposes. Below are the steps to install and configure these tools.
 
-[Prometheus Docs]("https://prometheus.io/docs/introduction/overview/")
-
-[Grafana Docs]("https://grafana.com/docs/grafana/latest/")
-
 ## It all starts with Monitoring 
 
 Monitoring your Kubernetes cluster is essential for ensuring the health and performance of your applications and infrastructure. Here are some reasons why monitoring your Kubernetes cluster is important:
@@ -18,13 +14,9 @@ Monitoring your Kubernetes cluster is essential for ensuring the health and perf
 
 - Security and compliance: Monitoring your Kubernetes cluster can help you identify potential security risks and ensure compliance with regulations and policies. By tracking access logs and other security-related metrics, you can quickly detect and respond to potential security threats.
 
-<br></br>
-
 ## Using Prometheus for monitoring
 
 Prometheus is an open-source monitoring and alerting system that helps you collect and store metrics about your software systems and infrastructure, and analyze that data to gain insights into their health and performance. It provides a powerful query language, a flexible data model, and a range of integrations with other tools and systems. With Prometheus, you can easily monitor metrics such as CPU usage, memory usage, network traffic, and application-specific metrics, and use that data to troubleshoot issues, optimize performance, and create alerts to notify you when things go wrong.
-
-<br></br>
 
 ## Why Prometheus over other monitoring tools ?
 
@@ -40,8 +32,6 @@ Prometheus is a popular choice for Kubernetes monitoring for several reasons:
 
 - Integrations: Prometheus integrates with a wide range of other tools and systems, including Grafana for visualization, Alertmanager for alerting, and Kubernetes API server for metadata discovery.
 
-<br></br>
-
 ## Prometheus Architecture
 
 <br></br>
@@ -56,8 +46,6 @@ Grafana is a popular open-source data visualization and analytics platform that 
 Grafana supports a wide range of data sources, including databases, time-series databases, and other data storage systems. It provides a powerful query language that allows you to retrieve and analyze data from these sources, and to create custom dashboards and alerts based on that data.
 
 In addition to its powerful data visualization and analysis capabilities, Grafana is also highly extensible. It supports a wide range of plugins and integrations, including integrations with popular monitoring and logging tools like Prometheus, Elasticsearch, and InfluxDB.
-
-
 
 ## Install Grafana on Debian or Ubuntu
 ```bash
@@ -115,15 +103,15 @@ docker-compose ps
 
 -------------------------------------------------------------------------
 
-## Pre-Requisite
+## Pre-Requisite to install using HELM
 
-- Kubernetes Cluster - Minikube for Testing
+- Kubernetes Cluster - Minikube for Testing, KubeADM, Kind or any prefrered one
 - Helm 
 
 If you don't have them installed. Follow the below links:
 
-[Install Minikube]("https://minikube.sigs.k8s.io/docs/start/")
+Install Minikube: https://minikube.sigs.k8s.io/docs/start/ 
 
-[Install Helm]("https://helm.sh/docs/intro/install/")
+Install Helm: https://helm.sh/docs/intro/install/ 
 
 <br></br>
